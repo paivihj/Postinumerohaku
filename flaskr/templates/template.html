@@ -1,0 +1,16 @@
+<div>
+{% block header %}
+  <h1>{% block title %}Postinumerohaku{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    <label for="postitoimipaikka">Postitoimipaikka: </label>
+    <input name="postitoimipaikka" id="postitoimipaikka" required>
+    <input type="submit" value="Hae postinumerot">
+  </form>
+
+  <h4>{{ haku }}</h4>
+  {{ values }}
+{% endblock %}
+</div>
